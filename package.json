@@ -1,0 +1,24 @@
+{
+  "name": "firebaseprofilertree",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "copyassets": "cp ./src/index.html ./package.json ./dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "npm run copyassets",
+    "build": "tsc -p tsconfig.main.json && webpack",
+    "start": "cd dist && electron .",
+    "prestart": "npm run copyassets",
+    "build:watch": "tsc -p . --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^5.0.1",
+    "ts-loader": "^6.0.0",
+    "typescript": "^3.4.5",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
+  }
+}
