@@ -15,10 +15,10 @@ firebase database:profile [--raw] [--no-collapse]
 
 The output without the --raw parameter shows a nice summary of the data in a table view. But it collapse some data, so according to your data depth, it can be useless.
 
-With the --co-collapse parameter, all the data is flattened. It's then hard to focus on where a high load can be.
+With the --no-collapse parameter, all the data is flattened. It's then hard to focus on where a high load can be.
 
 With the --raw parameter, the data is difficult to analyze.
 
 So I made this program that takes the raw output and shows it as a treeview.
 
-For now, it's very basic. For it can be usefull.
+For now, it's very basic.
